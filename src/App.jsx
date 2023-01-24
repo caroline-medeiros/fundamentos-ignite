@@ -53,10 +53,10 @@ return (
       {posts.map(post => {
        return (
         <Post 
+          key={post.id}
           author={post.author}
           content={post.content}
           publishedAt={post.publishedAt}
-
         />
        )
       })
